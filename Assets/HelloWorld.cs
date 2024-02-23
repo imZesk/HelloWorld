@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PlayableCharacter;
 
-public class HelloWorld : MonoBehaviour
+namespace testNamespace
 {
-    // Start is called before the first frame update
-    void Start()
+    public class HelloWorld : MonoBehaviour
     {
-        Enemy enemy = new Enemy("Orco", 50);
-        Player player = new Player("Caballero", 90);
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
+            Debug.Log("test");
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        // Update is called once per frame
+        void Update()
+        {
 
+        }
     }
 }
