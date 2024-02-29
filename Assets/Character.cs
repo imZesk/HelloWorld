@@ -5,7 +5,7 @@ using UnityEngine;
 public class Character
 {
     public string name;
-    private int healthPoints = 1;
+    private int healthPoints = 100;
     //int vida { get; set; }
     //bool alive { get; set; }
 
@@ -25,6 +25,11 @@ public class Character
     public static void takeDmg(Character x)
     {
         x.healthPoints = x.healthPoints - 1;
+
+        if (x. healthPoints <= 0) 
+        {
+             Debug.Log("murio bug");
+        }
     }
 
 }
